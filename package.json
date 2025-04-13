@@ -1,0 +1,22 @@
+{
+  "name": "sync-passcreator",
+  "version": "1.0.0",
+  "description": "Synchronisation automatique Passcreator vers Google Sheets",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [],
+  "author": "Zakaria",
+  "license": "ISC",
+  "dependencies": {
+    "@types/node": "^22.13.11",
+    "axios": "^1.8.4",
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "google-spreadsheet": "^3.3.0",
+    "googleapis": "^148.0.0",
+    "node-fetch": "^3.3.2"
+  },
+  "type": "module"
+}
