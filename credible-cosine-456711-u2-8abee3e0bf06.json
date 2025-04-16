@@ -1,13 +1,1 @@
-{
-  "type": "service_account",
-  "project_id": "credible-cosine-456711-u2",
-  "private_key_id": "8abee3e0bf06f5d378b03f1e2a10e2717f4c3f6f",
-  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQC1MX/JwdMzNADK\nqm3WO9uqwqpgHWCGZ05Od1HK7sik3yGsue13qAVscUfDX6bhlqiBvXMpYs2YaDvl\nZOVY4PMxe+YcFFNis3TmF2BIBr3pK3cC21fhHFINE9ChiPdSjvq+6YYsovAihhx2\n035zpP4qSG7ihIK/CQ78v4+Xbw6+e2l68+fYj78jH1kCRbBIZcN9mQUw2hb01OEE\nVtbpMjjSr6d3GVKnSa1NFmV2T+RG67grqkag/3KUDEUsIKwQkbFPSgcoGXFQZTm7\nDxXpJSCwkTx7FolJBy/g/xVrTCfRC8joqgNhUBbJ4je8XWwysj/CYg8MRyhllwFI\nSDykV82nAgMBAAECggEAFQPNr2fEiA7C/L5xiMRegNqdChK+LDh1E5KxMNkq+jxK\n2o6h5RverSoiSZ2hbE6d8pY3chhcgg2szLk8BGfqrNWS5bTRywPHThxt9Uya4B1D\na1hnQ9uWBKBEtUd+b9vXZycMgcbQFSD60ilLZDxBokPOYIU/6MozK8tH6yddTWgu\nS8dEgcU+YLlyEZ0/HnSwl3oZviqnhaxfkL99fWPJ5dEzV6/ur7Dm/G6gJGX+2knP\nBlBX/CE+Onfbe9gIkjMCRmnZLOHpVIdp1okVhpM8G1hBshb/mCKUnwzdAJ/GyLKM\n67lGsMaReqzQysLnBylm/d7QUcorNkORCtcZqoTz+QKBgQD77EZXjC9JUpTimCv7\nRK7VAtcF81uoJOaYIt9LM4T9QfJbenb7uKpyHNJFD9IoeVvtTA0Xq9o49Wa6+VyE\nCw2LExzDwq80gN7/aaY/HcWRX1F9DamTg9IedP3q1jBA55XGKfAQIba6E007Z3yt\nSSahSnOEQvnuNbegaNh/TOiHXQKBgQC4IDB3pLotmzKzNFY9F0FalgPeBeAMHpOc\nVcuI/FPWPHglmH6xnFss3QXVU8tSx6U8Z2YBgfPwgrkkoVHMrJUBx4GCn0YgKwHa\nmg83EA3uRluzW8EJEHnIc0NYZ3r3XYs96UHeKcQPPdR9cL3LEYrfdhYCKSvq/cO3\njQRrNZls0wKBgGCrHaLijBKaub7pnZbhmCTs3g3OgFFZN5MRbpWww0tbTuCDcbzN\n87muDZGqrH4Tc47vK+b1btuEb1M39KRGiX/gaZ1Ey25eNTPVGpIFnpZV+TL/Vx7f\n6nT9d6HxZrrBItvTo+bMyQ1F8tDkuRbVhxlFNGaAPN+HhVrsYIcYv/GRAoGAGvrE\nf1OI4FPkavPZSxxUPDTNHkRYHw5/7KF5sHngwvybUk71CYtypLFCQI8FtPyCDsbL\n4J6tIunUvTRSKx6Cuv8D0CMMgHwsyl5WqmfU0rxGhZKFR5G9dozFKngHQaXYWFsM\nhsQx8VXLBBJ4DQBmC/ZepTRpNga3Hfcw1ZDGCXcCgYAN2Fog1GIMfrzA9Ud4juC3\nbjXGeQevRimtajyH36g67tVH0J/ljVp99MHllEPYnb0cFpMBGAS4aUMymPMEQxc2\ncgIuWz/BIIE7PV7fQlDTeV5Hd5xW0D5dL3/rZknloJwf0o5GSwKN5XoGg/5Hv1dn\nO3/0xgsLJ664g/eq4el1SQ==\n-----END PRIVATE KEY-----\n",
-  "client_email": "passcreator-sync@credible-cosine-456711-u2.iam.gserviceaccount.com",
-  "client_id": "108941611715742816596",
-  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
-  "token_uri": "https://oauth2.googleapis.com/token",
-  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
-  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/passcreator-sync%40credible-cosine-456711-u2.iam.gserviceaccount.com",
-  "universe_domain": "googleapis.com"
-}
+
