@@ -1,18 +1,22 @@
 import express from "express";
-import dotenv from "dotenv";
 import axios from "axios";
+import fs from "fs";
 
-dotenv.config();
+// Lire et parser la clé depuis le secret file Render
+const credentials = JSON.parse(fs.readFileSync('/etc/secrets/credentials.json', 'utf8'));
+const API_KEY = credentials.private_key_id; // ou un champ spécifique selon ton usage
+const PROJECT_ID = credentials.project_id;
+
 const app = express();
 const port = 3000;
 
 app.get("/", async (req, res) => {
 try {
 const response = await axios.get(
-`https://api.passcreator.de/api/clients/${process.env.PROJECT_ID}`,
+`https://api.passcreator.de/api/clients/${PROJECT_ID}`,
 {
 headers: {
-Authorization: `Bearer ${process.env.API_KEY}`
+Authorization: `Bearer ${API_KEY}`,
 }
 }
 );
@@ -24,11 +28,12 @@ fields: pass.fields
 
 res.json(clients);
 } catch (error) {
-console.error("Erreur proxy :", error.message);
-res.status(500).json({ error: "Erreur côté Replit" });
+console.error(error.response ? error.response.data : error.message);
+res.status(500).json({ error: "Erreur lors de la récupération des données" });
 }
 });
 
 app.listen(port, () => {
-console.log(`Proxy Passcreator en ligne sur http://localhost:${port}`);
+console.log(`Serveur en écoute sur le port ${port}`);
 });
+
