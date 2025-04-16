@@ -9,7 +9,7 @@ const port = 3000;
 app.get("/", async (req, res) => {
 try {
 const response = await axios.get(
-`https://api.passcreator.com/api/clients/${process.env.PROJECT_ID}`,
+`https://api.passcreator.de/api/clients/${process.env.PROJECT_ID}`,
 {
 headers: {
 Authorization: `Bearer ${process.env.API_KEY}`
