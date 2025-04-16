@@ -36,4 +36,3 @@ res.status(500).json({ error: "Erreur lors de la récupération des données" })
 app.listen(port, () => {
 console.log(`Serveur en écoute sur le port ${port}`);
 });
-
