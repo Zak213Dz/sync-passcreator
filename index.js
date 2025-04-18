@@ -1,36 +1,23 @@
-import { google } from "googleapis";
-import { readFileSync } from "fs";
+import fs from 'fs';
+import { google } from 'googleapis';
 
-// Lecture du fichier de clé JSON depuis Render (secret file)
-const credentials = JSON.parse(
-readFileSync("/etc/secrets/credentials.json", "utf8")
-);
-
-// Authentification avec la clé Google Cloud
 const auth = new google.auth.GoogleAuth({
-credentials,
-scopes: ["https://www.googleapis.com/auth/spreadsheets"],
+keyFile: '/etc/secrets/credentials.json',
+scopes: ['https://www.googleapis.com/auth/spreadsheets'],
 });
 
-// ID de la feuille Google Sheets (à mettre dans tes variables d’environnement Render)
-const spreadsheetId = process.env.SHEET_ID;
+const sheets = google.sheets({ version: 'v4', auth });
 
-async function accessSheet() {
+async function readSheet() {
 try {
-const client = await auth.getClient();
-const sheets = google.sheets({ version: "v4", auth: client });
-
-// Exemple de lecture de la 1re feuille, A1 à C10
-const res = await sheets.spreadsheets.values.get({
-spreadsheetId,
-range: "Feuille1!A1:C10",
+const response = await sheets.spreadsheets.values.get({
+spreadsheetId: 'TON_ID_SHEET',
+range: 'Fiches Clients!A1:F',
 });
-
-console.log("Données lues depuis Sheets :");
-console.log(res.data.values);
-} catch (err) {
-console.error("Erreur d’accès à Google Sheets :", err.message);
+console.log(response.data.values);
+} catch (error) {
+console.error('Erreur Google Sheets :', error);
 }
 }
 
-accessSheet();
+readSheet();
